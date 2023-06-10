@@ -6,6 +6,7 @@ WORKDIR /src
 
 # pipを使ってpoetryをインストール
 RUN pip install poetry
+RUN pip install pydantic
 
 # poetryの定義ファイルをコピー（存在する場合）
 COPY pyproject.toml* poetry.lock* ./
